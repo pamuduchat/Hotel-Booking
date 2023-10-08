@@ -1,0 +1,59 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust the fractions as needed */
+  gap: 20px; /* Adjust the gap as needed */
+  align-items: center;
+}
+
+.login-left > img {
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+  width: 20vw; /* Set a maximum width relative to the viewport width */
+}
+
+.login-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.login-input {
+  height: 30px;
+  padding: 10px;
+}
+
+.login-button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #3f8040;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-button:disabled {
+  background-color: #3f8040;
+  cursor: not-allowed;
+}
+
+.register-button {
+  display: flex;
+  border: none;
+  padding: 10px 20px;
+  background-color: #3f8040;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  justify-content: center;
+}
